@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-div {
+    width: 30%;
+    box-shadow: 1px 1px 5px #000;
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 2% auto;
+    border-radius: 50px;
+}
+
+.main-div h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.buttons button{
+    padding: 10px 35px;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 2px  solid #000;
+    cursor: pointer;
+    transition: .4s;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="main-div">
+
+        <h1><span id="hours">00</span> : <span id="minute">00</span> : <span id="seconds">00</span></h1>
+        
+        <div class="buttons">
+        <button onclick="start()">Start</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="stop()">Stop</button>
+        </div>
+        </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
